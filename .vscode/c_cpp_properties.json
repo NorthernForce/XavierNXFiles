@@ -10,7 +10,8 @@
                 "/workspaces/rosnfr/src/nfr_ros/nfr_apriltag/include/**",
                 "/usr/include/**",
                 "/usr/local/include/ntcore",
-                "/usr/local/include/wpiutil"
+                "/usr/local/include/wpiutil",
+                "/opt/ros/humble/install/include/sensor_msgs"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",
