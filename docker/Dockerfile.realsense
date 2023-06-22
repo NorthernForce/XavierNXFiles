@@ -1,0 +1,14 @@
+ARG BASE_IMAGE=nvcr.io/nvidia/l4t-jetpack:r35.3.1
+FROM ${BASE_IMAGE}
+WORKDIR /opt/realsense
+COPY scripts/install_realsense_dependencies.sh install_realsense_dependencies.sh
+RUN chmod +x install_realsense_dependencies.sh && ./install_realsense_dependencies.sh
+COPY scripts/build_realsense.sh build_realsense.sh
+RUN chmod +x build_realsense.sh && ./build_realsense.sh
+ARG ROS_DISTRO=humble
+WORKDIR /opt/ros/${ROS_DISTRO}
+RUN mkdir src
+RUN cd src && git clone https://github.com/IntelRealSense/realsense-ros.git -b ros2-development
+RUN . install/setup.sh && rosdep install -i --from-path src --ignore-src -r -y --rosdistro ${ROS_DISTRO} --skip-keys="librealsense2 xacro"
+RUN . install/setup.sh && colcon build --merge-install
+RUN rm -rf build src log

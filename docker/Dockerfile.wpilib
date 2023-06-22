@@ -1,0 +1,9 @@
+ARG BASE_IMAGE=nvcr.io/nvidia/l4t-jetpack:r35.3.1
+FROM ${BASE_IMAGE}
+RUN apt-get update
+RUN apt-get install -y software-properties-common
+RUN add-apt-repository -y ppa:ubuntu-toolchain-r/test && apt update
+RUN apt install -y g++-11
+RUN apt install -y python3-pip
+RUN pip3 install -U --find-links=https://tortall.net/~robotpy/wheels/2023/raspbian/ pyntcore
+RUN pip3 install pynetworktables
