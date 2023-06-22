@@ -1,0 +1,6 @@
+ARG BASE_IMAGE=nvcr.io/nvidia/l4t-jetpack:r35.3.1
+FROM ${BASE_IMAGE}
+ARG ROS_DISTRO=humble
+ENV ROS_DISTRO=${ROS_DISTRO}
+COPY scripts/workspace_entrypoint.sh /workspaces/workspace_entrypoint.sh
+RUN chmod +x /workspaces/workspace_entrypoint.sh
