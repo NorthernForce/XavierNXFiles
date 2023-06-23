@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/humble/install/lib/python3.8/site-packages",
+        "",
+        "/usr/local/lib"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/humble/install/lib/python3.8/site-packages",
+        "",
+        "/usr/local/lib"
+    ]
+}
