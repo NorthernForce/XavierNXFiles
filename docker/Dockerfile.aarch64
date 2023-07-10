@@ -1,0 +1,6 @@
+ARG BASE_IMAGE=nvcr.io/nvidia/l4t-jetpack:r35.3.1
+FROM ${BASE_IMAGE}
+RUN apt-get update
+RUN apt-get install -y software-properties-common
+RUN add-apt-repository -y ppa:ubuntu-toolchain-r/test && apt update
+RUN apt install -y g++-11
