@@ -8,5 +8,7 @@
         "/opt/ros/humble/install/lib/python3.8/site-packages",
         "",
         "/usr/local/lib"
-    ]
+    ],
+    "python.analysis.typeCheckingMode": "off",
+    "editor.detectIndentation": false
 }
