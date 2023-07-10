@@ -1,0 +1,3 @@
+[submodule "src/nfr_ros"]
+	path = src/nfr_ros
+	url = https://github.com/NorthernForce/nfr_ros
