@@ -10,5 +10,8 @@
         "/usr/local/lib"
     ],
     "python.analysis.typeCheckingMode": "off",
-    "editor.detectIndentation": false
+    "editor.detectIndentation": false,
+    "files.associations": {
+        "*.inc": "cpp"
+    }
 }
