@@ -12,6 +12,12 @@
     "python.analysis.typeCheckingMode": "off",
     "editor.detectIndentation": false,
     "files.associations": {
-        "*.inc": "cpp"
+        "*.inc": "cpp",
+        "*.ipp": "cpp",
+        "atomic": "cpp",
+        "condition_variable": "cpp",
+        "future": "cpp",
+        "mutex": "cpp",
+        "shared_mutex": "cpp"
     }
 }
