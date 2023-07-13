@@ -10,7 +10,8 @@
                 "/usr/include/**",
                 "/opt/ros/humble/install/include/rclcpp",
                 "/usr/local/include/ntcore",
-                "/usr/local/include/wpiutil"
+                "/usr/local/include/wpiutil",
+                "/usr/include/nlohmann"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-arm64",
