@@ -19,6 +19,11 @@
         "future": "cpp",
         "mutex": "cpp",
         "shared_mutex": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "netfwd": "cpp",
+        "buffer": "cpp",
+        "internet": "cpp",
+        "functional": "cpp",
+        "socket": "cpp"
     }
 }
