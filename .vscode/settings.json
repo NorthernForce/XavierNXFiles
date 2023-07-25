@@ -1,12 +1,39 @@
 {
     "python.autoComplete.extraPaths": [
+        "/workspaces/rosnfr/install/nfr_tf_bridge_msgs/lib/python3.8/site-packages",
+        "/workspaces/rosnfr/install/nfr_tf_bridge/lib/python3.8/site-packages",
+        "/workspaces/rosnfr/install/nfr_odometry/lib/python3.8/site-packages",
+        "/workspaces/rosnfr/install/nfr_navigation/lib/python3.8/site-packages",
+        "/workspaces/rosnfr/install/nfr_apriltag/lib/python3.8/site-packages",
         "/opt/ros/humble/install/lib/python3.8/site-packages",
         "",
         "/usr/local/lib"
     ],
     "python.analysis.extraPaths": [
+        "/workspaces/rosnfr/install/nfr_tf_bridge_msgs/lib/python3.8/site-packages",
+        "/workspaces/rosnfr/install/nfr_tf_bridge/lib/python3.8/site-packages",
+        "/workspaces/rosnfr/install/nfr_odometry/lib/python3.8/site-packages",
+        "/workspaces/rosnfr/install/nfr_navigation/lib/python3.8/site-packages",
+        "/workspaces/rosnfr/install/nfr_apriltag/lib/python3.8/site-packages",
         "/opt/ros/humble/install/lib/python3.8/site-packages",
         "",
         "/usr/local/lib"
-    ]
+    ],
+    "python.analysis.typeCheckingMode": "off",
+    "editor.detectIndentation": false,
+    "files.associations": {
+        "*.inc": "cpp",
+        "*.ipp": "cpp",
+        "atomic": "cpp",
+        "condition_variable": "cpp",
+        "future": "cpp",
+        "mutex": "cpp",
+        "shared_mutex": "cpp",
+        "type_traits": "cpp",
+        "netfwd": "cpp",
+        "buffer": "cpp",
+        "internet": "cpp",
+        "functional": "cpp",
+        "socket": "cpp"
+    }
 }

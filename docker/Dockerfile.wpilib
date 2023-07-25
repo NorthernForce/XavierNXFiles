@@ -4,9 +4,16 @@ RUN apt install -y python3-pip
 RUN pip3 install -U --find-links=https://tortall.net/~robotpy/wheels/2023/raspbian/ pyntcore
 RUN pip3 install pynetworktables jinja2
 WORKDIR /tmp
+RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 10
+RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 20
+RUN update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 10
+RUN update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 20
+RUN update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 30
+RUN update-alternatives --set cc /usr/bin/gcc
 RUN git clone https://github.com/wpilibsuite/allwpilib.git
 RUN cd allwpilib && mkdir build && cd build && cmake .. -DWITH_JAVA=OFF -DWITH_WPILIB=OFF -DWITH_EXAMPLES=OFF \
     -DWITH_TESTS=OFF -DWITH_GUI=OFF -DWITH_SIMULATION_MODULES=OFF
 RUN cd allwpilib/build && make -j$(nproc)
 RUN cd allwpilib/build && make install
 RUN rm -rf allwpilib
+RUN apt install -y nlohmann-json3-dev
