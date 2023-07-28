@@ -7,3 +7,6 @@
 [submodule "src/isaac_ros/isaac_ros_apriltag"]
 	path = src/isaac_ros/isaac_ros_apriltag
 	url = https://github.com/cml1010101/isaac_ros_apriltag.git
+[submodule "src/isaac_ros/isaac_ros_image_pipeline"]
+	path = src/isaac_ros/isaac_ros_image_pipeline
+	url = https://github.com/cml1010101/isaac_ros_image_pipeline.git
