@@ -1,3 +1,6 @@
 [submodule "src/nfr_ros"]
 	path = src/nfr_ros
 	url = https://github.com/NorthernForce/nfr_ros
+[submodule "src/isaac_ros/isaac_ros_common"]
+	path = src/isaac_ros/isaac_ros_common
+	url = https://github.com/cml1010101/isaac_ros_common.git
