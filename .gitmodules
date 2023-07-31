@@ -10,3 +10,6 @@
 [submodule "src/isaac_ros/isaac_ros_image_pipeline"]
 	path = src/isaac_ros/isaac_ros_image_pipeline
 	url = https://github.com/cml1010101/isaac_ros_image_pipeline.git
+[submodule "src/isaac_ros/isaac_ros_nitros"]
+	path = src/isaac_ros/isaac_ros_nitros
+	url = https://github.com/cml1010101/isaac_ros_nitros.git
