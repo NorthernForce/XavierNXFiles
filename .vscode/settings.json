@@ -1,26 +1,18 @@
 {
     "python.autoComplete.extraPaths": [
-        "/workspaces/rosnfr/install/nfr_tf_bridge_msgs/lib/python3.8/site-packages",
-        "/workspaces/rosnfr/install/nfr_tf_bridge/lib/python3.8/site-packages",
         "/workspaces/rosnfr/install/nfr_odometry/lib/python3.8/site-packages",
         "/workspaces/rosnfr/install/nfr_navigation/lib/python3.8/site-packages",
         "/workspaces/rosnfr/install/nfr_apriltag/lib/python3.8/site-packages",
-        "/workspaces/rosnfr/install/isaac_ros_test/lib/python3.8/site-packages",
-        "/workspaces/rosnfr/install/isaac_ros_nvengine_interfaces/lib/python3.8/site-packages",
-        "/workspaces/rosnfr/install/isaac_ros_apriltag_interfaces/lib/python3.8/site-packages",
+        "/workspaces/rosnfr/install/nfr_tf_bridge_msgs/lib/python3.8/site-packages",
         "/opt/ros/humble/install/lib/python3.8/site-packages",
         "",
         "/usr/local/lib"
     ],
     "python.analysis.extraPaths": [
-        "/workspaces/rosnfr/install/nfr_tf_bridge_msgs/lib/python3.8/site-packages",
-        "/workspaces/rosnfr/install/nfr_tf_bridge/lib/python3.8/site-packages",
         "/workspaces/rosnfr/install/nfr_odometry/lib/python3.8/site-packages",
         "/workspaces/rosnfr/install/nfr_navigation/lib/python3.8/site-packages",
         "/workspaces/rosnfr/install/nfr_apriltag/lib/python3.8/site-packages",
-        "/workspaces/rosnfr/install/isaac_ros_test/lib/python3.8/site-packages",
-        "/workspaces/rosnfr/install/isaac_ros_nvengine_interfaces/lib/python3.8/site-packages",
-        "/workspaces/rosnfr/install/isaac_ros_apriltag_interfaces/lib/python3.8/site-packages",
+        "/workspaces/rosnfr/install/nfr_tf_bridge_msgs/lib/python3.8/site-packages",
         "/opt/ros/humble/install/lib/python3.8/site-packages",
         "",
         "/usr/local/lib"
