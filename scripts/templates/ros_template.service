@@ -1,0 +1,10 @@
+[Unit]
+Description=@description@
+Requires=docker.service
+After=docker.service
+Type=simple
+
+[Service]
+Restart=always
+RestartSec=30
+ExecStart=/usr/bin/launch_docker_ros %package% %script%

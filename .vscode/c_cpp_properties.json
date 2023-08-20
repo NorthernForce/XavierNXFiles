@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/workspaces/rosnfr/install/nfr_tf_bridge_msgs/include/**",
+                "/opt/ros/humble/install/include/**",
+                "/workspaces/rosnfr/src/isaac_ros/isaac_ros_apriltag/isaac_ros_apriltag/include/**",
+                "/workspaces/rosnfr/src/isaac_ros/isaac_ros_common/isaac_ros_common/include/**",
+                "/workspaces/rosnfr/src/isaac_ros/isaac_ros_common/isaac_ros_nvengine/include/**",
+                "/workspaces/rosnfr/src/isaac_ros/isaac_ros_image_pipeline/isaac_ros_image_proc/include/**",
+                "/workspaces/rosnfr/src/isaac_ros/isaac_ros_image_pipeline/isaac_ros_stereo_image_proc/include/**",
+                "/workspaces/rosnfr/src/nfr_ros/nfr_tf_bridge_msgs/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/src/isaac_ros/isaac_ros_apriltag/isaac_ros_apriltag/nvapriltags/nvapriltags"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-arm64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}
