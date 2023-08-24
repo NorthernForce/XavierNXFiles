@@ -35,5 +35,6 @@
         "internet": "cpp",
         "functional": "cpp",
         "socket": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": false
 }
