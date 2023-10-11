@@ -1,24 +1,21 @@
 {
-    "configurations": [
-        {
-            "browse": {
-                "databaseFilename": "${default}",
-                "limitSymbolsToIncludedHeaders": false
-            },
-            "includePath": [
-                "/opt/ros/humble/install/include/**",
-                "/usr/include/**",
-                "/opt/ros/humble/install/include/rclcpp",
-                "/usr/local/include/ntcore",
-                "/usr/local/include/wpiutil",
-                "/usr/include/nlohmann"
-            ],
-            "name": "ROS",
-            "intelliSenseMode": "gcc-arm64",
-            "compilerPath": "/usr/bin/gcc",
-            "cStandard": "gnu11",
-            "cppStandard": "c++17"
-        }
-    ],
-    "version": 4
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/humble/install/include/**",
+        "/workspaces/rosnfr/src/nfr_ros/nfr_apriltag/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
 }
