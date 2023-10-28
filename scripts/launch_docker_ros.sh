@@ -11,5 +11,5 @@ docker run --rm -dit --privileged --network host --workdir /workspaces/rosnfr -v
     --runtime nvidia \
     -v /dev/*:/dev/* --name aarch64-ros-container \
     --entrypoint /workspaces/workspace_entrypoint.sh ${IMAGE_NAME} /bin/bash && \
-    docker exec aarch64-ros-container /bin/bash -c "source install/setup.bash && ros2 launch ${PACKAGE_NAME} ${LAUNCH_FILE} $@" && \
+    docker exec aarch64-ros-container /bin/bash -c "source install/setup.bash && RMW_IMPLEMENTATION=rmw_cyclonedds_cpp ros2 launch ${PACKAGE_NAME} ${LAUNCH_FILE} $@" && \
     docker stop aarch64-ros-container
