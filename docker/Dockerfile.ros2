@@ -5,9 +5,10 @@ WORKDIR /opt/ros/${ROS_DISTRO}
 RUN locale-gen en_US en_US.UTF-8 && update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 ENV PYTHONIOENCODING=utf-8
+ENV DEBIAN_FRONTEND=noninteractive
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 1
-RUN apt update && sudo apt install -y curl gnupg2 lsb-release
-RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+RUN apt update && apt install -y curl gnupg2 lsb-release
+RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key add -
 RUN sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/ubuntu \
     $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
 RUN apt update && apt install -y \
@@ -79,6 +80,7 @@ RUN rosinstall_generator --deps --rosdistro ${ROS_DISTRO} ros_base \
 RUN vcs import src < ros2.repos
 RUN cd src && git clone https://github.com/osrf/negotiated && cd negotiated && git checkout master
 RUN rosdep init
+ENV RTI_NC_LICENSE_ACCEPTED=yes
 RUN rosdep update && rosdep install --from-paths src --ignore-src --rosdistro ${ROS_DISTRO} -y --skip-keys \
     "console_bridge fastcdr fastrtps libopensplice67 libopensplice69 rti-connext-dds-5.3.1 urdfdom_headers"
 RUN python3 -m pip install --upgrade pip
